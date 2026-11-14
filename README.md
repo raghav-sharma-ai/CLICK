@@ -1,5 +1,5 @@
 # CLICK
-**An Original 2D Time-Attack Precision Platformer in Godot 4**
+**A 2D Time-Attack Precision Platformer in Godot 4**
 
 [![GitHub Pages](https://img.shields.io/badge/Play%20Online-GitHub%20Pages-brightgreen)](https://raghav-sharma-ai.github.io/CLICK/)
 
