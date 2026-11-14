@@ -36,44 +36,49 @@ size = Vector2(1320, 32)
 [node name="Platforms" type="Node2D" parent="."]
 
 [node name="SpawnFloor" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(140, 600)
-size = Vector2(220, 40)
+position = Vector2(90, 580)
+size = Vector2(130, 40)
 
-[node name="Platform1" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(360, 520)
-size = Vector2(170, 32)
+[node name="Island2" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(320, 520)
+size = Vector2(100, 32)
 
-[node name="Platform2" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(600, 450)
-size = Vector2(220, 32)
+[node name="Island3" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(560, 450)
+size = Vector2(110, 32)
 
-[node name="Platform3" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(860, 480)
-size = Vector2(180, 32)
+[node name="Island4" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(800, 470)
+size = Vector2(90, 32)
 
 [node name="ExitFloor" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1120, 520)
-size = Vector2(200, 40)
+position = Vector2(1050, 490)
+size = Vector2(180, 40)
 
 [node name="Hazards" type="Node2D" parent="."]
-
-[node name="Platform2Spike" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(600, 434)
-width = 44.0
-height = 18.0
-
-[node name="ExitFloorGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(1040, 500)
-width = 36.0
-height = 18.0
 
 [node name="ContinuousSpikeFloor" parent="Hazards" instance=ExtResource("7_hazard")]
 position = Vector2(640, 680)
 width = 1380.0
 height = 40.0
 
+[node name="Island3Spike" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(590, 434)
+width = 22.0
+height = 16.0
+
+[node name="Island4Spike" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(800, 454)
+width = 20.0
+height = 16.0
+
+[node name="ExitSpikeGuard" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(975, 470)
+width = 24.0
+height = 18.0
+
 [node name="Player" parent="." instance=ExtResource("4_player")]
-position = Vector2(100, 560)
+position = Vector2(60, 540)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1160, 474)
+position = Vector2(1090, 444)

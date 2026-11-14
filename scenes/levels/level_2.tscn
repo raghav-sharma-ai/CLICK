@@ -38,38 +38,38 @@ size = Vector2(1320, 32)
 [node name="Platforms" type="Node2D" parent="."]
 
 [node name="SpawnFloor" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(120, 600)
-size = Vector2(180, 40)
+position = Vector2(90, 580)
+size = Vector2(130, 40)
 
-[node name="Pillar1" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(240, 600)
-size = Vector2(80, 40)
+[node name="LaunchPillar1" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(240, 580)
+size = Vector2(70, 40)
 
-[node name="HighPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(430, 380)
-size = Vector2(180, 28)
+[node name="HighNeedle" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(380, 360)
+size = Vector2(90, 28)
 
-[node name="Pillar2" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(620, 500)
-size = Vector2(110, 32)
+[node name="LaunchPillar2" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(580, 500)
+size = Vector2(80, 32)
 
-[node name="UpperMid" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(860, 370)
-size = Vector2(170, 28)
+[node name="IslandPlatform" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(860, 400)
+size = Vector2(90, 28)
 
 [node name="ExitFloor" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1120, 470)
-size = Vector2(200, 40)
+position = Vector2(1080, 440)
+size = Vector2(180, 40)
 
 [node name="LaunchPads" type="Node2D" parent="."]
 
 [node name="LaunchPad1" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(240, 580)
-launch_impulse = Vector2(0, -720)
+position = Vector2(240, 560)
+launch_impulse = Vector2(0, -780)
 
 [node name="LaunchPad2" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(620, 484)
-launch_impulse = Vector2(180, -680)
+position = Vector2(580, 484)
+launch_impulse = Vector2(260, -720)
 
 [node name="Hazards" type="Node2D" parent="."]
 
@@ -78,19 +78,24 @@ position = Vector2(640, 680)
 width = 1380.0
 height = 40.0
 
+[node name="IslandSpike" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(825, 384)
+width = 20.0
+height = 16.0
+
 [node name="ExitGuardSpike" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(1030, 450)
-width = 36.0
+position = Vector2(1005, 420)
+width = 24.0
 height = 18.0
 
 [node name="TimeFragments" type="Node2D" parent="."]
 
 [node name="ChronoShard1" parent="TimeFragments" instance=ExtResource("9_frag")]
-position = Vector2(740, 240)
+position = Vector2(620, 240)
 bonus_seconds = 2.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
-position = Vector2(80, 560)
+position = Vector2(60, 540)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1160, 424)
+position = Vector2(1120, 394)

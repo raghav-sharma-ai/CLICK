@@ -38,30 +38,30 @@ size = Vector2(1320, 32)
 [node name="Platforms" type="Node2D" parent="."]
 
 [node name="SpawnFloor" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(110, 580)
-size = Vector2(160, 40)
+position = Vector2(90, 580)
+size = Vector2(130, 40)
 
 [node name="LaunchPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(300, 520)
-size = Vector2(120, 32)
+position = Vector2(290, 520)
+size = Vector2(90, 32)
 
 [node name="HighRafter" parent="Platforms" instance=ExtResource("6_platform")]
 position = Vector2(560, 360)
-size = Vector2(180, 28)
+size = Vector2(140, 24)
 
 [node name="DescentPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(800, 430)
-size = Vector2(160, 32)
+position = Vector2(780, 440)
+size = Vector2(120, 28)
 
 [node name="ExitFloor" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1060, 490)
-size = Vector2(200, 40)
+position = Vector2(1020, 490)
+size = Vector2(170, 36)
 
 [node name="LaunchPads" type="Node2D" parent="."]
 
 [node name="AngledLaunch" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(300, 504)
-launch_impulse = Vector2(280, -720)
+position = Vector2(290, 504)
+launch_impulse = Vector2(275, -720)
 
 [node name="Hazards" type="Node2D" parent="."]
 
@@ -70,24 +70,29 @@ position = Vector2(640, 680)
 width = 1380.0
 height = 40.0
 
+[node name="RafterSpike" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(610, 348)
+width = 22.0
+height = 16.0
+
 [node name="DescentGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(740, 414)
+position = Vector2(735, 426)
 width = 24.0
 height = 18.0
 
 [node name="ExitGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(980, 470)
+position = Vector2(955, 472)
 width = 24.0
 height = 18.0
 
 [node name="TimeFragments" type="Node2D" parent="."]
 
 [node name="Shard1" parent="TimeFragments" instance=ExtResource("9_frag")]
-position = Vector2(560, 290)
+position = Vector2(560, 280)
 bonus_seconds = 2.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
-position = Vector2(70, 540)
+position = Vector2(60, 540)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1120, 444)
+position = Vector2(1060, 444)
