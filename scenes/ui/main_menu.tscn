@@ -1,17 +1,6 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1_menu"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_Title_Box"]
-bg_color = Color(0.141176, 0.145098, 0.129412, 1)
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
-expand_margin_left = 12.0
-expand_margin_top = 4.0
-expand_margin_right = 12.0
-expand_margin_bottom = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_Panel"]
 bg_color = Color(0.929412, 0.905882, 0.847059, 0.98)
@@ -67,37 +56,30 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -300.0
-offset_top = 110.0
+offset_top = 100.0
 offset_right = 300.0
 offset_bottom = 230.0
 grow_horizontal = 2
-theme_override_constants/separation = 8
+theme_override_constants/separation = 6
 alignment = 1
 
-[node name="HBox" type="HBoxContainer" parent="MainView/TitleContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="WordCli" type="Label" parent="MainView/TitleContainer/HBox"]
+[node name="TitleLabel" type="Label" parent="MainView/TitleContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.141176, 0.145098, 0.129412, 1)
-theme_override_font_sizes/font_size = 56
-text = "CLI"
+theme_override_font_sizes/font_size = 64
+text = "CLICK"
+horizontal_alignment = 1
 
-[node name="FrameBadge" type="PanelContainer" parent="MainView/TitleContainer/HBox"]
+[node name="AccentBar" type="ColorRect" parent="MainView/TitleContainer"]
+custom_minimum_size = Vector2(100, 4)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_Title_Box")
-
-[node name="WordCk" type="Label" parent="MainView/TitleContainer/HBox/FrameBadge"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.898039, 0.419608, 0.211765, 1)
-theme_override_font_sizes/font_size = 56
-text = "CK"
+size_flags_horizontal = 4
+color = Color(0.898039, 0.419608, 0.211765, 1)
 
 [node name="Subtitle" type="Label" parent="MainView/TitleContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.48, 0.49, 0.46, 1)
-theme_override_font_sizes/font_size = 14
+theme_override_font_sizes/font_size = 13
 text = "PRECISION 10-SECOND TIME-ATTACK PLATFORMER"
 horizontal_alignment = 1
 

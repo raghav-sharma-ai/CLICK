@@ -42,34 +42,34 @@ position = Vector2(100, 560)
 size = Vector2(150, 40)
 
 [node name="CenterTower" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(560, 460)
-size = Vector2(130, 32)
+position = Vector2(530, 460)
+size = Vector2(140, 32)
 
 [node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1140, 420)
+position = Vector2(1040, 420)
 size = Vector2(180, 36)
 
 [node name="MovingPlatforms" type="Node2D" parent="."]
 
 [node name="FastMoving1" parent="MovingPlatforms" instance=ExtResource("9_moving")]
-position = Vector2(280, 510)
-size = Vector2(110, 24)
-travel_offset = Vector2(120, 0)
+position = Vector2(270, 510)
+size = Vector2(120, 24)
+travel_offset = Vector2(100, 0)
 speed = 120.0
 wait_time = 0.25
 
 [node name="FastMoving2" parent="MovingPlatforms" instance=ExtResource("9_moving")]
-position = Vector2(800, 410)
-size = Vector2(110, 24)
-travel_offset = Vector2(120, 0)
+position = Vector2(780, 410)
+size = Vector2(140, 24)
+travel_offset = Vector2(80, 0)
 speed = 125.0
 wait_time = 0.25
 
 [node name="LaunchPads" type="Node2D" parent="."]
 
 [node name="Launch" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(560, 444)
-launch_impulse = Vector2(180, -680)
+position = Vector2(530, 444)
+launch_impulse = Vector2(250, -700)
 
 [node name="Hazards" type="Node2D" parent="."]
 
@@ -79,12 +79,12 @@ width = 1380.0
 height = 40.0
 
 [node name="ExitGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(1050, 402)
-width = 30.0
+position = Vector2(980, 402)
+width = 24.0
 height = 18.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector2(70, 520)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1170, 374)
+position = Vector2(1090, 374)

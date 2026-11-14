@@ -43,29 +43,29 @@ position = Vector2(100, 580)
 size = Vector2(150, 40)
 
 [node name="LaunchBase" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(230, 580)
-size = Vector2(80, 40)
+position = Vector2(240, 580)
+size = Vector2(90, 40)
 
 [node name="CenterTower" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(740, 350)
-size = Vector2(130, 32)
+position = Vector2(720, 380)
+size = Vector2(140, 32)
 
 [node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1120, 430)
-size = Vector2(200, 40)
+position = Vector2(1000, 430)
+size = Vector2(190, 40)
 
 [node name="LaunchPads" type="Node2D" parent="."]
 
 [node name="LaunchPad" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(230, 560)
-launch_impulse = Vector2(200, -720)
+position = Vector2(240, 560)
+launch_impulse = Vector2(250, -720)
 
 [node name="MovingPlatforms" type="Node2D" parent="."]
 
 [node name="AirElevator" parent="MovingPlatforms" instance=ExtResource("9_moving")]
-position = Vector2(490, 350)
-size = Vector2(110, 24)
-travel_offset = Vector2(0, 140)
+position = Vector2(480, 380)
+size = Vector2(130, 24)
+travel_offset = Vector2(0, 110)
 speed = 90.0
 wait_time = 0.35
 
@@ -77,23 +77,23 @@ width = 1380.0
 height = 40.0
 
 [node name="CenterSpikes" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(740, 334)
-width = 36.0
+position = Vector2(720, 364)
+width = 26.0
 height = 18.0
 
 [node name="ExitSpikes" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(1020, 410)
-width = 36.0
+position = Vector2(930, 410)
+width = 24.0
 height = 18.0
 
 [node name="TimeFragments" type="Node2D" parent="."]
 
 [node name="HighShard" parent="TimeFragments" instance=ExtResource("10_frag")]
-position = Vector2(850, 260)
+position = Vector2(720, 270)
 bonus_seconds = 2.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector2(70, 540)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1160, 384)
+position = Vector2(1050, 384)

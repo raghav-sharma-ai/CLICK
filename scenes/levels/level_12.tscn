@@ -41,26 +41,26 @@ size = Vector2(150, 40)
 
 [node name="Pillar1" parent="Platforms" instance=ExtResource("6_platform")]
 position = Vector2(260, 510)
-size = Vector2(80, 32)
+size = Vector2(100, 32)
 
 [node name="Pillar2" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(430, 440)
-size = Vector2(80, 32)
+position = Vector2(420, 460)
+size = Vector2(100, 32)
 
 [node name="Pillar3" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(600, 380)
-size = Vector2(90, 32)
+position = Vector2(580, 410)
+size = Vector2(110, 32)
 
 [node name="Pillar4" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(780, 430)
-size = Vector2(80, 32)
+position = Vector2(740, 450)
+size = Vector2(100, 32)
 
 [node name="Pillar5" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(950, 480)
-size = Vector2(80, 32)
+position = Vector2(900, 490)
+size = Vector2(110, 32)
 
 [node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1130, 440)
+position = Vector2(1100, 450)
 size = Vector2(180, 40)
 
 [node name="Hazards" type="Node2D" parent="."]
@@ -71,17 +71,17 @@ width = 1380.0
 height = 40.0
 
 [node name="Pillar3Spike" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(600, 364)
-width = 30.0
+position = Vector2(580, 394)
+width = 24.0
 height = 16.0
 
 [node name="Pillar5Spike" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(950, 464)
-width = 30.0
+position = Vector2(900, 474)
+width = 24.0
 height = 16.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector2(70, 520)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1150, 394)
+position = Vector2(1140, 404)

@@ -42,34 +42,34 @@ position = Vector2(100, 580)
 size = Vector2(150, 40)
 
 [node name="LowerPath1" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(320, 560)
+position = Vector2(300, 560)
 size = Vector2(120, 32)
 
 [node name="LowerPath2" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(580, 560)
+position = Vector2(500, 560)
 size = Vector2(120, 32)
 
 [node name="LowerPath3" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(840, 560)
+position = Vector2(700, 560)
 size = Vector2(120, 32)
 
 [node name="UpperHighDeck" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(600, 260)
-size = Vector2(160, 24)
+position = Vector2(470, 380)
+size = Vector2(180, 24)
 
 [node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1120, 500)
-size = Vector2(200, 40)
+position = Vector2(980, 480)
+size = Vector2(220, 40)
 
 [node name="LaunchPads" type="Node2D" parent="."]
 
 [node name="UpperRouteLauncher" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(170, 560)
-launch_impulse = Vector2(260, -740)
+position = Vector2(160, 560)
+launch_impulse = Vector2(300, -720)
 
 [node name="UpperDeckLauncher" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(670, 248)
-launch_impulse = Vector2(240, -660)
+position = Vector2(520, 368)
+launch_impulse = Vector2(290, -700)
 
 [node name="Hazards" type="Node2D" parent="."]
 
@@ -79,28 +79,28 @@ width = 1380.0
 height = 40.0
 
 [node name="LowerSpike1" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(450, 670)
-width = 120.0
+position = Vector2(400, 670)
+width = 80.0
 height = 30.0
 
 [node name="LowerSpike2" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(710, 670)
-width = 120.0
+position = Vector2(600, 670)
+width = 80.0
 height = 30.0
 
 [node name="ExitGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(1020, 480)
-width = 36.0
+position = Vector2(890, 460)
+width = 24.0
 height = 18.0
 
 [node name="TimeFragments" type="Node2D" parent="."]
 
 [node name="UpperShard" parent="TimeFragments" instance=ExtResource("9_frag")]
-position = Vector2(600, 210)
+position = Vector2(470, 320)
 bonus_seconds = 2.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector2(70, 540)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1160, 454)
+position = Vector2(1040, 434)

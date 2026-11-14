@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=10 format=3]
 
 [ext_resource type="Script" path="res://scripts/gameplay/level_controller.gd" id="1_controller"]
 [ext_resource type="Script" path="res://scripts/objects/paper_background.gd" id="2_bg"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" path="res://scenes/objects/platform.tscn" id="6_platform"]
 [ext_resource type="PackedScene" path="res://scenes/objects/hazard.tscn" id="7_hazard"]
 [ext_resource type="PackedScene" path="res://scenes/objects/launch_pad.tscn" id="8_launch"]
+[ext_resource type="PackedScene" path="res://scenes/objects/time_fragment.tscn" id="9_frag"]
 
 [node name="Level7" type="Node2D"]
 script = ExtResource("1_controller")
@@ -42,25 +43,25 @@ size = Vector2(160, 40)
 
 [node name="PillarLaunch1" parent="Platforms" instance=ExtResource("6_platform")]
 position = Vector2(280, 580)
-size = Vector2(90, 40)
+size = Vector2(100, 40)
 
 [node name="MidSpringPillar" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(640, 400)
-size = Vector2(110, 32)
+position = Vector2(560, 420)
+size = Vector2(140, 32)
 
 [node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1100, 340)
-size = Vector2(220, 36)
+position = Vector2(940, 380)
+size = Vector2(200, 36)
 
 [node name="LaunchPads" type="Node2D" parent="."]
 
 [node name="Spring1" parent="LaunchPads" instance=ExtResource("8_launch")]
 position = Vector2(280, 560)
-launch_impulse = Vector2(240, -700)
+launch_impulse = Vector2(300, -720)
 
 [node name="Spring2" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(640, 384)
-launch_impulse = Vector2(260, -700)
+position = Vector2(560, 404)
+launch_impulse = Vector2(320, -720)
 
 [node name="Hazards" type="Node2D" parent="."]
 
@@ -69,13 +70,19 @@ position = Vector2(640, 680)
 width = 1380.0
 height = 40.0
 
-[node name="ExitSpikeGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(1000, 322)
-width = 36.0
-height = 18.0
+[node name="Pillar1Spike" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(230, 560)
+width = 20.0
+height = 16.0
+
+[node name="TimeFragments" type="Node2D" parent="."]
+
+[node name="MidShard" parent="TimeFragments" instance=ExtResource("9_frag")]
+position = Vector2(750, 260)
+bonus_seconds = 2.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector2(70, 540)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1150, 294)
+position = Vector2(990, 334)

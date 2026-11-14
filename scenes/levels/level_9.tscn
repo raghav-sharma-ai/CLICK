@@ -42,19 +42,19 @@ position = Vector2(120, 580)
 size = Vector2(170, 40)
 
 [node name="LowerRightLaunchBase" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(740, 560)
-size = Vector2(130, 32)
+position = Vector2(700, 560)
+size = Vector2(140, 32)
 
 [node name="UpperRafter" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(740, 260)
-size = Vector2(150, 24)
+position = Vector2(700, 320)
+size = Vector2(160, 24)
 
 [node name="UpperMid" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(460, 280)
+position = Vector2(460, 320)
 size = Vector2(140, 24)
 
 [node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(180, 280)
+position = Vector2(190, 320)
 size = Vector2(180, 32)
 
 [node name="MovingPlatforms" type="Node2D" parent="."]
@@ -62,15 +62,15 @@ size = Vector2(180, 32)
 [node name="MovingH" parent="MovingPlatforms" instance=ExtResource("9_moving")]
 position = Vector2(340, 540)
 size = Vector2(120, 24)
-travel_offset = Vector2(150, 0)
+travel_offset = Vector2(130, 0)
 speed = 95.0
 wait_time = 0.35
 
 [node name="LaunchPads" type="Node2D" parent="."]
 
 [node name="SuperSpring" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(740, 544)
-launch_impulse = Vector2(0, -780)
+position = Vector2(700, 544)
+launch_impulse = Vector2(0, -820)
 
 [node name="Hazards" type="Node2D" parent="."]
 
@@ -80,12 +80,12 @@ width = 1380.0
 height = 40.0
 
 [node name="RafterSpikeGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(460, 268)
-width = 30.0
+position = Vector2(460, 308)
+width = 24.0
 height = 16.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector2(70, 540)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(140, 234)
+position = Vector2(150, 274)

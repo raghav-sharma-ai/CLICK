@@ -42,26 +42,26 @@ position = Vector2(110, 580)
 size = Vector2(160, 40)
 
 [node name="LaunchPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(320, 520)
+position = Vector2(300, 520)
 size = Vector2(120, 32)
 
 [node name="HighRafter" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(700, 260)
-size = Vector2(140, 24)
+position = Vector2(560, 360)
+size = Vector2(180, 28)
 
 [node name="DescentPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(920, 440)
+position = Vector2(800, 430)
 size = Vector2(160, 32)
 
 [node name="ExitFloor" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1140, 500)
-size = Vector2(180, 40)
+position = Vector2(1060, 490)
+size = Vector2(200, 40)
 
 [node name="LaunchPads" type="Node2D" parent="."]
 
 [node name="AngledLaunch" parent="LaunchPads" instance=ExtResource("8_launch")]
-position = Vector2(320, 504)
-launch_impulse = Vector2(260, -700)
+position = Vector2(300, 504)
+launch_impulse = Vector2(280, -720)
 
 [node name="Hazards" type="Node2D" parent="."]
 
@@ -71,23 +71,23 @@ width = 1380.0
 height = 40.0
 
 [node name="DescentGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(850, 424)
-width = 30.0
+position = Vector2(740, 414)
+width = 24.0
 height = 18.0
 
 [node name="ExitGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(1060, 480)
-width = 30.0
+position = Vector2(980, 470)
+width = 24.0
 height = 18.0
 
 [node name="TimeFragments" type="Node2D" parent="."]
 
 [node name="Shard1" parent="TimeFragments" instance=ExtResource("9_frag")]
-position = Vector2(700, 210)
+position = Vector2(560, 290)
 bonus_seconds = 2.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector2(70, 540)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1160, 454)
+position = Vector2(1120, 444)

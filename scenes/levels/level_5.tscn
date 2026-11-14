@@ -46,24 +46,24 @@ position = Vector2(560, 420)
 size = Vector2(160, 32)
 
 [node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1130, 420)
+position = Vector2(1060, 420)
 size = Vector2(190, 36)
 
 [node name="MovingPlatforms" type="Node2D" parent="."]
 
 [node name="Elevator1" parent="MovingPlatforms" instance=ExtResource("8_moving")]
-position = Vector2(310, 380)
+position = Vector2(310, 410)
 size = Vector2(120, 24)
-travel_offset = Vector2(0, 150)
+travel_offset = Vector2(0, 110)
 speed = 85.0
-wait_time = 0.4
+wait_time = 0.35
 
 [node name="Elevator2" parent="MovingPlatforms" instance=ExtResource("8_moving")]
-position = Vector2(820, 520)
+position = Vector2(800, 500)
 size = Vector2(120, 24)
-travel_offset = Vector2(0, -160)
+travel_offset = Vector2(0, -110)
 speed = 90.0
-wait_time = 0.4
+wait_time = 0.35
 
 [node name="Hazards" type="Node2D" parent="."]
 
@@ -74,17 +74,17 @@ height = 40.0
 
 [node name="CenterSpikeGuard" parent="Hazards" instance=ExtResource("7_hazard")]
 position = Vector2(560, 404)
-width = 36.0
+width = 32.0
 height = 18.0
 
 [node name="TimeFragments" type="Node2D" parent="."]
 
 [node name="MidShard" parent="TimeFragments" instance=ExtResource("9_frag")]
-position = Vector2(820, 300)
+position = Vector2(800, 330)
 bonus_seconds = 2.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector2(70, 520)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1160, 374)
+position = Vector2(1120, 374)

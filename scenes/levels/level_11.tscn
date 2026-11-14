@@ -42,27 +42,27 @@ position = Vector2(100, 560)
 size = Vector2(150, 40)
 
 [node name="Pillar1" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(280, 490)
+position = Vector2(270, 500)
 size = Vector2(110, 32)
 
 [node name="MidDropIsland" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(500, 530)
+position = Vector2(470, 520)
 size = Vector2(120, 32)
 
 [node name="HighRafter" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(940, 400)
-size = Vector2(150, 32)
+position = Vector2(880, 410)
+size = Vector2(140, 32)
 
 [node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
-position = Vector2(1140, 460)
+position = Vector2(1080, 460)
 size = Vector2(180, 40)
 
 [node name="MovingPlatforms" type="Node2D" parent="."]
 
 [node name="ChronoMover" parent="MovingPlatforms" instance=ExtResource("8_moving")]
-position = Vector2(700, 460)
-size = Vector2(110, 24)
-travel_offset = Vector2(100, -80)
+position = Vector2(640, 470)
+size = Vector2(120, 24)
+travel_offset = Vector2(80, -70)
 speed = 85.0
 wait_time = 0.35
 
@@ -74,27 +74,27 @@ width = 1380.0
 height = 40.0
 
 [node name="MidGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(500, 514)
-width = 30.0
+position = Vector2(470, 504)
+width = 24.0
 height = 16.0
 
 [node name="ExitGuard" parent="Hazards" instance=ExtResource("7_hazard")]
-position = Vector2(1050, 440)
-width = 30.0
+position = Vector2(1000, 440)
+width = 24.0
 height = 18.0
 
 [node name="TimeFragments" type="Node2D" parent="."]
 
 [node name="Shard1" parent="TimeFragments" instance=ExtResource("9_frag")]
-position = Vector2(380, 420)
+position = Vector2(370, 420)
 bonus_seconds = 2.0
 
 [node name="Shard2" parent="TimeFragments" instance=ExtResource("9_frag")]
-position = Vector2(800, 340)
+position = Vector2(760, 340)
 bonus_seconds = 2.0
 
 [node name="Player" parent="." instance=ExtResource("4_player")]
 position = Vector2(70, 520)
 
 [node name="Goal" parent="." instance=ExtResource("5_goal")]
-position = Vector2(1160, 414)
+position = Vector2(1130, 414)
