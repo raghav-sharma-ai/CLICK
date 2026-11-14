@@ -1,4 +1,4 @@
-# LAST FRAME
+# CLICK
 **An Original 2D Time-Attack Precision Platformer in Godot 4**
 
 [![GitHub Pages](https://img.shields.io/badge/Play%20Online-GitHub%20Pages-brightgreen)](https://raghav-sharma-ai.github.io/CLICK/)
@@ -7,7 +7,7 @@
 
 ## 1. HOW CAN SOMEONE ACCESS AND PLAY THIS ON THEIR LAPTOP?
 
-There are two easy ways for anyone to play **LAST FRAME** on any laptop (Mac, Windows, Linux, or Chromebook):
+There are two easy ways for anyone to play **CLICK** on any laptop (Mac, Windows, Linux, or Chromebook):
 
 ### Option A: Play Instantly in Any Web Browser (No Install Needed!)
 Since this is a web game, it can run directly inside Chrome, Safari, Firefox, or Edge:
@@ -69,7 +69,7 @@ The game features **15 progressively challenging frames**, each introducing new 
 | **12** | **PRECISION MATRIX**| Stepped narrow pillars with edge spike guards. |
 | **13** | **THE GAUNTLET** | High launch into an aerial elevator catch over double spike barricades. |
 | **14** | **SPLIT SECOND** | Branching paths: safe tight lower route vs. high-speed upper launch route. |
-| **15** | **THE LAST FRAME** | The Grand Finale combining moving platforms, pneumatic pads, chrono shards, and precision timing! |
+| **15** | **THE FINAL CLICK** | The Grand Finale combining moving platforms, pneumatic pads, chrono shards, and precision timing! |
 
 ---
 

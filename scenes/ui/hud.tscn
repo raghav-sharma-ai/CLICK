@@ -67,7 +67,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_Badge")
 layout_mode = 2
 theme_override_colors/font_color = Color(0.929412, 0.905882, 0.847059, 1)
 theme_override_font_sizes/font_size = 17
-text = "FRAME 01"
+text = "LEVEL 01"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -245,7 +245,7 @@ theme_override_constants/separation = 12
 layout_mode = 2
 theme_override_colors/font_color = Color(0.141176, 0.145098, 0.129412, 1)
 theme_override_font_sizes/font_size = 26
-text = "FRAME COMPLETE"
+text = "LEVEL COMPLETE"
 horizontal_alignment = 1
 
 [node name="TimeLabel" type="Label" parent="Overlays/VictoryOverlay/Panel/VBox"]
@@ -272,7 +272,7 @@ theme_override_constants/separation = 8
 [node name="NextButton" type="Button" parent="Overlays/VictoryOverlay/Panel/VBox/Buttons"]
 custom_minimum_size = Vector2(0, 42)
 layout_mode = 2
-text = "NEXT FRAME"
+text = "NEXT LEVEL"
 
 [node name="RetryButton" type="Button" parent="Overlays/VictoryOverlay/Panel/VBox/Buttons"]
 custom_minimum_size = Vector2(0, 38)
@@ -333,7 +333,7 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_colors/font_color = Color(0.3, 0.3, 0.3, 1)
 theme_override_font_sizes/font_size = 14
-text = "Reached 00.00s before reaching the exit frame."
+text = "Reached 00.00s before reaching the exit gate."
 horizontal_alignment = 1
 autowrap_mode = 2
 

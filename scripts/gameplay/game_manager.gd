@@ -70,11 +70,13 @@ func _save_save_data() -> void:
 	config.set_value("progress", "unlocked_levels", unlocked_levels)
 	config.set_value("progress", "best_times", best_times)
 	config.set_value("settings", "sfx_enabled", sfx_enabled)
-	config.save("user://last_frame_save.cfg")
+	config.save("user://click_save.cfg")
 
 func _load_save_data() -> void:
 	var config := ConfigFile.new()
-	var err := config.load("user://last_frame_save.cfg")
+	var err := config.load("user://click_save.cfg")
+	if err != OK:
+		err = config.load("user://last_frame_save.cfg")
 	if err == OK:
 		var loaded_unlocked = config.get_value("progress", "unlocked_levels", [1])
 		if loaded_unlocked is Array:

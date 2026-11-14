@@ -1,9 +1,9 @@
 extends Node
 
-## Comprehensive Integration Verification Suite for LAST FRAME
+## Comprehensive Integration Verification Suite for CLICK
 func _ready() -> void:
 	print("==================================================")
-	print("STARTING FULL GAME INTEGRATION VERIFICATION TEST")
+	print("STARTING CLICK INTEGRATION VERIFICATION TEST")
 	print("==================================================")
 	
 	await _test_main_menu()

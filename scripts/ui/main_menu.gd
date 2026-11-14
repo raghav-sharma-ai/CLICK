@@ -1,8 +1,8 @@
 extends Control
 
 ## MainMenu
-## Main title screen for LAST FRAME.
-## Manages Title view, 15-Frame Level Select grid, Settings view, and background animations.
+## Main title screen for CLICK.
+## Manages Title view, 15-Level Select grid, Settings view, and background animations.
 
 @onready var main_view: Control = $MainView
 @onready var level_select_view: Control = $LevelSelectView
@@ -36,7 +36,7 @@ const FRAME_INFO: Dictionary = {
 	12: {"title": "PRECISION MATRIX", "desc": "Narrow Pillars"},
 	13: {"title": "THE GAUNTLET", "desc": "Aerial Catches"},
 	14: {"title": "SPLIT SECOND", "desc": "Branching Paths"},
-	15: {"title": "THE LAST FRAME", "desc": "The Grand Finale"}
+	15: {"title": "THE FINAL CLICK", "desc": "The Grand Finale"}
 }
 
 func _ready() -> void:
@@ -136,7 +136,7 @@ func _build_level_cards() -> void:
 
 		# Level number
 		var num_lbl := Label.new()
-		num_lbl.text = "FRAME %02d" % lvl_id
+		num_lbl.text = "LEVEL %02d" % lvl_id
 		num_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		num_lbl.add_theme_font_size_override("font_size", 14)
 		num_lbl.add_theme_color_override("font_color", C_CHARCOAL if unlocked else Color(0.4, 0.4, 0.4))

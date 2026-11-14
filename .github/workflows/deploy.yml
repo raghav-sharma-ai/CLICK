@@ -1,4 +1,4 @@
-name: "Deploy LAST FRAME Web Game to GitHub Pages"
+name: "Deploy CLICK Web Game to GitHub Pages"
 
 on:
   push:

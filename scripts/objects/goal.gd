@@ -2,8 +2,8 @@
 extends Area2D
 class_name Goal
 
-## Goal Object (Exit Frame)
-## The destination marker for each level in LAST FRAME.
+## Goal Object (Exit Gate)
+## The destination marker for each level in CLICK.
 ## Features an architectural paper-industrial gate with a rotating geometric iris.
 
 signal goal_reached

@@ -72,7 +72,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		_on_restart_pressed()
 
 func update_hud(time_left: float, level_id: int, progress: float) -> void:
-	level_label.text = "FRAME %02d" % level_id
+	level_label.text = "LEVEL %02d" % level_id
 	
 	# Format countdown with hundredths of a second (e.g. 09.84)
 	var formatted_time := "%05.2f" % maxf(time_left, 0.0)
@@ -98,7 +98,7 @@ func update_hud(time_left: float, level_id: int, progress: float) -> void:
 func show_victory(level_id: int, time_left: float, is_new_best: bool, has_next_level: bool) -> void:
 	_hide_all_overlays()
 	victory_overlay.visible = true
-	vic_title.text = "FRAME %02d COMPLETE" % level_id
+	vic_title.text = "LEVEL %02d COMPLETE" % level_id
 	vic_time_label.text = "TIME REMAINING: %05.2fs" % time_left
 	
 	var best := GameManager.get_best_time(level_id)
@@ -116,9 +116,9 @@ func show_failure(reason: String) -> void:
 	failure_overlay.visible = true
 	if reason == "time_up":
 		fail_title.text = "TIME EXPIRED"
-		fail_reason_label.text = "Reached 00.00s before reaching the exit frame."
+		fail_reason_label.text = "Reached 00.00s before reaching the exit gate."
 	else:
-		fail_title.text = "FRAME COLLAPSED"
+		fail_title.text = "ELIMINATED"
 		fail_reason_label.text = "Contact with industrial hazard."
 
 func _toggle_pause() -> void:

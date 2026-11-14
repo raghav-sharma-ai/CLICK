@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name Player
 
-## Player Controller for LAST FRAME
+## Player Controller for CLICK
 ## Handles responsive 2D platformer physics including acceleration,
 ## friction, coyote time, jump buffering, variable jump cut, and launch impulses.
 

@@ -2,7 +2,7 @@ extends Node
 
 ## SoundManager
 ## Generates clean procedural 16-bit sound effects at runtime.
-## This ensures LAST FRAME has responsive audio feedback without relying
+## This ensures CLICK has responsive audio feedback without relying
 ## on any missing external audio files or dependencies.
 
 var _streams: Dictionary = {}

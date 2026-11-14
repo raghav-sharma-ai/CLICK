@@ -78,21 +78,21 @@ alignment = 1
 layout_mode = 2
 alignment = 1
 
-[node name="WordLast" type="Label" parent="MainView/TitleContainer/HBox"]
+[node name="WordCli" type="Label" parent="MainView/TitleContainer/HBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.141176, 0.145098, 0.129412, 1)
 theme_override_font_sizes/font_size = 56
-text = "LAST "
+text = "CLI"
 
 [node name="FrameBadge" type="PanelContainer" parent="MainView/TitleContainer/HBox"]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_Title_Box")
 
-[node name="WordFrame" type="Label" parent="MainView/TitleContainer/HBox/FrameBadge"]
+[node name="WordCk" type="Label" parent="MainView/TitleContainer/HBox/FrameBadge"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.898039, 0.419608, 0.211765, 1)
 theme_override_font_sizes/font_size = 56
-text = "FRAME"
+text = "CK"
 
 [node name="Subtitle" type="Label" parent="MainView/TitleContainer"]
 layout_mode = 2
@@ -124,7 +124,7 @@ text = "INITIATE RUN"
 [node name="LevelSelectBtn" type="Button" parent="MainView/VBox"]
 custom_minimum_size = Vector2(0, 44)
 layout_mode = 2
-text = "SELECT FRAME"
+text = "SELECT LEVEL"
 
 [node name="SettingsBtn" type="Button" parent="MainView/VBox"]
 custom_minimum_size = Vector2(0, 44)
@@ -177,7 +177,7 @@ theme_override_constants/separation = 16
 layout_mode = 2
 theme_override_colors/font_color = Color(0.141176, 0.145098, 0.129412, 1)
 theme_override_font_sizes/font_size = 28
-text = "FRAME ARCHIVE (15 SECTORS)"
+text = "SECTOR ARCHIVE (15 LEVELS)"
 horizontal_alignment = 1
 
 [node name="Scroll" type="ScrollContainer" parent="LevelSelectView/Panel/VBox"]
