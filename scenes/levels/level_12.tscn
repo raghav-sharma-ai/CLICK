@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/gameplay/level_controller.gd" id="1_controller"]
+[ext_resource type="Script" path="res://scripts/objects/paper_background.gd" id="2_bg"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3_hud"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="4_player"]
+[ext_resource type="PackedScene" path="res://scenes/objects/goal.tscn" id="5_goal"]
+[ext_resource type="PackedScene" path="res://scenes/objects/platform.tscn" id="6_platform"]
+[ext_resource type="PackedScene" path="res://scenes/objects/hazard.tscn" id="7_hazard"]
+
+[node name="Level12" type="Node2D"]
+script = ExtResource("1_controller")
+level_id = 12
+initial_time = 10.0
+
+[node name="PaperBackground" type="CanvasLayer" parent="."]
+layer = -100
+script = ExtResource("2_bg")
+
+[node name="HUD" parent="." instance=ExtResource("3_hud")]
+
+[node name="Boundaries" type="Node2D" parent="."]
+
+[node name="LeftWall" parent="Boundaries" instance=ExtResource("6_platform")]
+position = Vector2(-16, 360)
+size = Vector2(32, 720)
+
+[node name="RightWall" parent="Boundaries" instance=ExtResource("6_platform")]
+position = Vector2(1296, 360)
+size = Vector2(32, 720)
+
+[node name="Ceiling" parent="Boundaries" instance=ExtResource("6_platform")]
+position = Vector2(640, -16)
+size = Vector2(1320, 32)
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="SpawnFloor" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(100, 560)
+size = Vector2(150, 40)
+
+[node name="Pillar1" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(260, 510)
+size = Vector2(80, 32)
+
+[node name="Pillar2" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(430, 440)
+size = Vector2(80, 32)
+
+[node name="Pillar3" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(600, 380)
+size = Vector2(90, 32)
+
+[node name="Pillar4" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(780, 430)
+size = Vector2(80, 32)
+
+[node name="Pillar5" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(950, 480)
+size = Vector2(80, 32)
+
+[node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(1130, 440)
+size = Vector2(180, 40)
+
+[node name="Hazards" type="Node2D" parent="."]
+
+[node name="ContinuousSpikeFloor" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(640, 680)
+width = 1380.0
+height = 40.0
+
+[node name="Pillar3Spike" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(600, 364)
+width = 30.0
+height = 16.0
+
+[node name="Pillar5Spike" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(950, 464)
+width = 30.0
+height = 16.0
+
+[node name="Player" parent="." instance=ExtResource("4_player")]
+position = Vector2(70, 520)
+
+[node name="Goal" parent="." instance=ExtResource("5_goal")]
+position = Vector2(1150, 394)

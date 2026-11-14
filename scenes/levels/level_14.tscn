@@ -1,0 +1,106 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/gameplay/level_controller.gd" id="1_controller"]
+[ext_resource type="Script" path="res://scripts/objects/paper_background.gd" id="2_bg"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3_hud"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="4_player"]
+[ext_resource type="PackedScene" path="res://scenes/objects/goal.tscn" id="5_goal"]
+[ext_resource type="PackedScene" path="res://scenes/objects/platform.tscn" id="6_platform"]
+[ext_resource type="PackedScene" path="res://scenes/objects/hazard.tscn" id="7_hazard"]
+[ext_resource type="PackedScene" path="res://scenes/objects/launch_pad.tscn" id="8_launch"]
+[ext_resource type="PackedScene" path="res://scenes/objects/time_fragment.tscn" id="9_frag"]
+
+[node name="Level14" type="Node2D"]
+script = ExtResource("1_controller")
+level_id = 14
+initial_time = 10.0
+
+[node name="PaperBackground" type="CanvasLayer" parent="."]
+layer = -100
+script = ExtResource("2_bg")
+
+[node name="HUD" parent="." instance=ExtResource("3_hud")]
+
+[node name="Boundaries" type="Node2D" parent="."]
+
+[node name="LeftWall" parent="Boundaries" instance=ExtResource("6_platform")]
+position = Vector2(-16, 360)
+size = Vector2(32, 720)
+
+[node name="RightWall" parent="Boundaries" instance=ExtResource("6_platform")]
+position = Vector2(1296, 360)
+size = Vector2(32, 720)
+
+[node name="Ceiling" parent="Boundaries" instance=ExtResource("6_platform")]
+position = Vector2(640, -16)
+size = Vector2(1320, 32)
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="SpawnFloor" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(100, 580)
+size = Vector2(150, 40)
+
+[node name="LowerPath1" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(320, 560)
+size = Vector2(120, 32)
+
+[node name="LowerPath2" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(580, 560)
+size = Vector2(120, 32)
+
+[node name="LowerPath3" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(840, 560)
+size = Vector2(120, 32)
+
+[node name="UpperHighDeck" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(600, 260)
+size = Vector2(160, 24)
+
+[node name="ExitPlatform" parent="Platforms" instance=ExtResource("6_platform")]
+position = Vector2(1120, 500)
+size = Vector2(200, 40)
+
+[node name="LaunchPads" type="Node2D" parent="."]
+
+[node name="UpperRouteLauncher" parent="LaunchPads" instance=ExtResource("8_launch")]
+position = Vector2(170, 560)
+launch_impulse = Vector2(260, -740)
+
+[node name="UpperDeckLauncher" parent="LaunchPads" instance=ExtResource("8_launch")]
+position = Vector2(670, 248)
+launch_impulse = Vector2(240, -660)
+
+[node name="Hazards" type="Node2D" parent="."]
+
+[node name="ContinuousSpikeFloor" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(640, 680)
+width = 1380.0
+height = 40.0
+
+[node name="LowerSpike1" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(450, 670)
+width = 120.0
+height = 30.0
+
+[node name="LowerSpike2" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(710, 670)
+width = 120.0
+height = 30.0
+
+[node name="ExitGuard" parent="Hazards" instance=ExtResource("7_hazard")]
+position = Vector2(1020, 480)
+width = 36.0
+height = 18.0
+
+[node name="TimeFragments" type="Node2D" parent="."]
+
+[node name="UpperShard" parent="TimeFragments" instance=ExtResource("9_frag")]
+position = Vector2(600, 210)
+bonus_seconds = 2.0
+
+[node name="Player" parent="." instance=ExtResource("4_player")]
+position = Vector2(70, 540)
+
+[node name="Goal" parent="." instance=ExtResource("5_goal")]
+position = Vector2(1160, 454)

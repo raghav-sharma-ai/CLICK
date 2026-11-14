@@ -17,13 +17,15 @@ const COLOR_SAND: Color = Color("D7B96D")         # Sand (decorative lines, coll
 const COLOR_MUTED: Color = Color("7A7D76")        # Muted grid lines
 
 var current_level_id: int = 1
-var total_levels: int = 3
-var best_times: Dictionary = {1: 0.0, 2: 0.0, 3: 0.0}
+var total_levels: int = 15
+var best_times: Dictionary = {}
 var unlocked_levels: Array[int] = [1]
 var sfx_enabled: bool = true
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
+	for i in range(1, total_levels + 1):
+		best_times[i] = 0.0
 	_setup_default_inputs()
 	_load_save_data()
 

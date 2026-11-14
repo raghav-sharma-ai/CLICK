@@ -152,10 +152,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -380.0
-offset_top = -220.0
-offset_right = 380.0
-offset_bottom = 220.0
+offset_left = -460.0
+offset_top = -260.0
+offset_right = 460.0
+offset_bottom = 260.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_Panel")
@@ -165,170 +165,36 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 32.0
-offset_top = 28.0
-offset_right = -32.0
-offset_bottom = -28.0
+offset_left = 28.0
+offset_top = 24.0
+offset_right = -28.0
+offset_bottom = -24.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 24
+theme_override_constants/separation = 16
 
 [node name="Title" type="Label" parent="LevelSelectView/Panel/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.141176, 0.145098, 0.129412, 1)
 theme_override_font_sizes/font_size = 28
-text = "FRAME SELECTION"
+text = "FRAME ARCHIVE (15 SECTORS)"
 horizontal_alignment = 1
 
-[node name="LevelGrid" type="HBoxContainer" parent="LevelSelectView/Panel/VBox"]
+[node name="Scroll" type="ScrollContainer" parent="LevelSelectView/Panel/VBox"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/separation = 20
-alignment = 1
+horizontal_scroll_mode = 0
 
-[node name="Level1Btn" type="Button" parent="LevelSelectView/Panel/VBox/LevelGrid"]
-custom_minimum_size = Vector2(210, 0)
+[node name="LevelGrid" type="GridContainer" parent="LevelSelectView/Panel/VBox/Scroll"]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxFlat_Card")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_Card_Disabled")
-
-[node name="VBox" type="VBoxContainer" parent="LevelSelectView/Panel/VBox/LevelGrid/Level1Btn"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 12.0
-offset_top = 16.0
-offset_right = -12.0
-offset_bottom = -16.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="Num" type="Label" parent="LevelSelectView/Panel/VBox/LevelGrid/Level1Btn/VBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.141176, 0.145098, 0.129412, 1)
-theme_override_font_sizes/font_size = 24
-text = "FRAME 01"
-horizontal_alignment = 1
-
-[node name="Desc" type="Label" parent="LevelSelectView/Panel/VBox/LevelGrid/Level1Btn/VBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.48, 0.49, 0.46, 1)
-theme_override_font_sizes/font_size = 12
-text = "FIRST CONTACT
-Basics & Spikes"
-horizontal_alignment = 1
-
-[node name="BestLabel" type="Label" parent="LevelSelectView/Panel/VBox/LevelGrid/Level1Btn"]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -32.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 13
-text = "UNTOUCHED"
-horizontal_alignment = 1
-
-[node name="Level2Btn" type="Button" parent="LevelSelectView/Panel/VBox/LevelGrid"]
-custom_minimum_size = Vector2(210, 0)
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxFlat_Card")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_Card_Disabled")
-
-[node name="VBox" type="VBoxContainer" parent="LevelSelectView/Panel/VBox/LevelGrid/Level2Btn"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 12.0
-offset_top = 16.0
-offset_right = -12.0
-offset_bottom = -16.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="Num" type="Label" parent="LevelSelectView/Panel/VBox/LevelGrid/Level2Btn/VBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.141176, 0.145098, 0.129412, 1)
-theme_override_font_sizes/font_size = 24
-text = "FRAME 02"
-horizontal_alignment = 1
-
-[node name="Desc" type="Label" parent="LevelSelectView/Panel/VBox/LevelGrid/Level2Btn/VBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.48, 0.49, 0.46, 1)
-theme_override_font_sizes/font_size = 12
-text = "PNEUMATICS
-Launch Momentum"
-horizontal_alignment = 1
-
-[node name="BestLabel" type="Label" parent="LevelSelectView/Panel/VBox/LevelGrid/Level2Btn"]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -32.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 13
-text = "LOCKED"
-horizontal_alignment = 1
-
-[node name="Level3Btn" type="Button" parent="LevelSelectView/Panel/VBox/LevelGrid"]
-custom_minimum_size = Vector2(210, 0)
-layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxFlat_Card")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_Card_Disabled")
-
-[node name="VBox" type="VBoxContainer" parent="LevelSelectView/Panel/VBox/LevelGrid/Level3Btn"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 12.0
-offset_top = 16.0
-offset_right = -12.0
-offset_bottom = -16.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="Num" type="Label" parent="LevelSelectView/Panel/VBox/LevelGrid/Level3Btn/VBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.141176, 0.145098, 0.129412, 1)
-theme_override_font_sizes/font_size = 24
-text = "FRAME 03"
-horizontal_alignment = 1
-
-[node name="Desc" type="Label" parent="LevelSelectView/Panel/VBox/LevelGrid/Level3Btn/VBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.48, 0.49, 0.46, 1)
-theme_override_font_sizes/font_size = 12
-text = "CLOCKWORK
-Moving Traverse"
-horizontal_alignment = 1
-
-[node name="BestLabel" type="Label" parent="LevelSelectView/Panel/VBox/LevelGrid/Level3Btn"]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -32.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 13
-text = "LOCKED"
-horizontal_alignment = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 5
 
 [node name="BackBtn" type="Button" parent="LevelSelectView/Panel/VBox"]
-custom_minimum_size = Vector2(160, 40)
+custom_minimum_size = Vector2(180, 42)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "RETURN TO TITLE"
