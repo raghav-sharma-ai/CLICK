@@ -1,0 +1,15 @@
+# Godot 4 specific ignores
+.godot/
+*.translation
+
+# Build output
+build/
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Temporary files
+*.tmp

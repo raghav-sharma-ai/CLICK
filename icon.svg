@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background: Warm Paper -->
+  <rect width="128" height="128" rx="20" fill="#EDE7D8"/>
+  <!-- Technical Grid -->
+  <line x1="0" y1="32" x2="128" y2="32" stroke="#7A7D76" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="0" y1="64" x2="128" y2="64" stroke="#7A7D76" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="0" y1="96" x2="128" y2="96" stroke="#7A7D76" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="32" y1="0" x2="32" y2="128" stroke="#7A7D76" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="64" y1="0" x2="64" y2="128" stroke="#7A7D76" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="96" y1="0" x2="96" y2="128" stroke="#7A7D76" stroke-width="1" stroke-opacity="0.2"/>
+  <!-- Outer Drafting Frame -->
+  <rect x="12" y="12" width="104" height="104" rx="8" fill="none" stroke="#242521" stroke-width="3"/>
+  <!-- Ground Platform Bar -->
+  <rect x="24" y="94" width="80" height="14" rx="2" fill="#242521"/>
+  <line x1="24" y1="94" x2="104" y2="94" stroke="#A7B3A0" stroke-width="3"/>
+  <!-- Runner Silhouette (Faceted Charcoal) -->
+  <polygon points="52,42 76,42 84,52 84,86 76,92 52,92 44,86 44,52" fill="#242521"/>
+  <!-- Architectural Fold Line -->
+  <line x1="64" y1="46" x2="64" y2="88" stroke="#A7B3A0" stroke-width="2"/>
+  <!-- Signal Orange Optic Visor -->
+  <rect x="62" y="56" width="20" height="8" rx="2" fill="#E56B36"/>
+  <circle cx="76" cy="60" r="2.5" fill="#FFFFFF"/>
+  <!-- Sand Accent Skid Foot -->
+  <rect x="48" y="91" width="12" height="4" rx="1" fill="#D7B96D"/>
+  <rect x="68" y="91" width="12" height="4" rx="1" fill="#D7B96D"/>
+</svg>
